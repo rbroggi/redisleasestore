@@ -107,7 +107,7 @@ func (s *Store) valToLease(val map[string]string) (*le.Lease, error) {
 	leaderTransitions := 0
 	if _, ok := val["LeaderTransitions"]; ok {
 		if _, err = fmt.Sscan(val["LeaderTransitions"], &leaderTransitions); err != nil {
-			return nil, err
+			return nil, fmt.Errorf("error parsing LeaderTransitions: %w", err)
 		}
 	}
 
