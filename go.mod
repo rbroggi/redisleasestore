@@ -4,7 +4,7 @@ go 1.24
 
 require (
 	github.com/rbroggi/leaderelection v1.6.0
-	github.com/redis/go-redis/v9 v9.11.0
+	github.com/redis/go-redis/v9 v9.12.1
 	github.com/stretchr/testify v1.10.0
 	github.com/testcontainers/testcontainers-go v0.38.0
 )
